@@ -45,3 +45,9 @@
         text-align: left;
     }
 }
+
+/* @media screen and (min-width: 1060px) {
+    .project h3 {
+        text-align: center;
+    }
+} */
