@@ -1,0 +1,49 @@
+.icon-btn {
+    --button-icon-font-family: 'Material Symbols Rounded';
+    --button-icon-font-size: 120%;
+    --button-icon-margin: auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-btn-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.icon-btn-icon {
+    font-family: var(--button-icon-font-family);
+    font-size: var(--button-icon-font-size);
+    margin: var(--button-icon-margin);
+    /* content: 'description'; */
+}
+
+.button-centered {
+    margin: 10px auto;
+}
+
+.btn-dark {
+    background-color: var(--dark-blue);
+    color: var(--neon);
+}
+
+.btn-dark:hover {
+    background-color: var(--neon);
+    color: var(--dark-blue);
+    box-shadow: var(--shadow-hover);
+}
+
+.btn-light {
+    background-color: var(--neon);
+    color: var(--dark-blue);
+}
+
+.btn-light:hover {
+    background-color: var(--dark-blue);
+    color: var(--neon);
+    
+}
