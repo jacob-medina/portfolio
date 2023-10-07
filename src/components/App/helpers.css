@@ -28,6 +28,11 @@
     justify-content: center;
 }
 
+.justify-start {
+    display: flex;
+    justify-content: flex-start;
+}
+
 .justify-space-between {
     display: flex;
     justify-content: space-between;

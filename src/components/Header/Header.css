@@ -1,0 +1,34 @@
+header {
+    color: var(--neon);
+}
+
+#hero-shot {
+    /* height: 50vh; */
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 40px;
+    /* background-color: teal; */
+    background: linear-gradient(15deg, var(--dark-blue) 80%, var(--neon))
+    /* background-image: url("../../assets/images/hero-shot-2.png");
+    background-position: left bottom 75%; */
+}
+
+/* My name */
+#hero-shot h1 {
+    margin: var(--heading-margin);
+    text-align: center;
+    font-size: 400%;
+    font-weight: 700;
+    text-shadow: 5px 5px 0px var(--black);
+}
+
+/* My title */
+#hero-shot h1 + p {
+    margin: 5px 0;
+    text-align: center;
+    font-size: 200%;
+    text-shadow: 2px 2px 0px var(--black);
+}

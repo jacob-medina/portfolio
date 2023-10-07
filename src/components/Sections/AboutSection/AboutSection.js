@@ -38,6 +38,7 @@ export default function AboutSection() {
                     </ul>
                     </div>
                 </div>
+                <div className="justify-start">
                     <LinkButton
                         href="https://drive.google.com/file/d/1NDCBzt-h-ClN9vPTnMICYr87FJE9XF9m/view"
                         icon="description"
@@ -46,6 +47,7 @@ export default function AboutSection() {
                     >
                         Resume
                     </LinkButton>
+                </div>
                     {/* <a href="https://drive.google.com/file/d/1NDCBzt-h-ClN9vPTnMICYr87FJE9XF9m/view" target="_blank" className="button-centered"> 
                         <button className="button-centered button-light">
                         <span className="button-resume">Resume</span>
