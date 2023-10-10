@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.5ee08979.css",
+    "main.js": "/portfolio/static/js/main.72fbec06.js",
+    "static/media/jacob.jpeg": "/portfolio/static/media/jacob.9e8f16194d33cce591f2.jpeg",
+    "static/media/totk-bingo-preview.png": "/portfolio/static/media/totk-bingo-preview.d657119ac55d68036bee.png",
+    "static/media/stackology-preview.png": "/portfolio/static/media/stackology-preview.82437c5362a6246e10bf.png",
+    "static/media/rateit-preview.png": "/portfolio/static/media/rateit-preview.ebe2b811823f0483dc33.png",
+    "static/media/odd-quote-out-preview.png": "/portfolio/static/media/odd-quote-out-preview.d3d33f9731c1fad765ce.png",
+    "static/media/pixel-bee-preview.png": "/portfolio/static/media/pixel-bee-preview.4aec7133c8869cf1e509.png",
+    "static/media/materialize-css.png": "/portfolio/static/media/materialize-css.1a13767a44d1914d83dd.png",
+    "static/media/sequelize.png": "/portfolio/static/media/sequelize.01b98355754659c74bf8.png",
+    "static/media/nodejs.svg": "/portfolio/static/media/nodejs.52cbf9a89f44655c0375b9e9f88bf9c5.svg",
+    "static/media/express.svg": "/portfolio/static/media/express.75fff9be2f3b289ba7be1f43a08f7a4c.svg",
+    "static/media/jquery.svg": "/portfolio/static/media/jquery.fcc480227fd31fecc887db807010bf1d.svg",
+    "static/media/handlebars.svg": "/portfolio/static/media/handlebars.2a3d23b58f3f8cbcd6943edf5d25058a.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/bootstrap.svg": "/portfolio/static/media/bootstrap.98585727bcfe0b1555649ec9bbab236c.svg",
+    "static/media/javascript.svg": "/portfolio/static/media/javascript.00f3e5cf8bcf4ae623b3835ca5791b15.svg",
+    "static/media/socket-io.svg": "/portfolio/static/media/socket-io.aa27363bb92247b80255c7bd11b30248.svg",
+    "static/media/css.svg": "/portfolio/static/media/css.4e47c3122b8d2476a02f97dcfcb28640.svg",
+    "static/media/html.svg": "/portfolio/static/media/html.f318c8b1d5945fa9adc827ae94849cb1.svg",
+    "main.5ee08979.css.map": "/portfolio/static/css/main.5ee08979.css.map",
+    "main.72fbec06.js.map": "/portfolio/static/js/main.72fbec06.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ee08979.css",
+    "static/js/main.72fbec06.js"
+  ]
+}
