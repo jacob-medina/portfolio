@@ -24,15 +24,13 @@ export default function Nav() {
             </LinkButton>
             <LinkButton
                 href="#contact-section"
+                newPage={false}
                 icon="person"
                 mode="light" 
                 className="btn-centered"  
             >
                 Contact
             </LinkButton>
-            {/* <a href="#project-section" className="button-centered"> <button className="button-light"><span className="button-projects">Projects</span></button> </a>
-            <a href="https://drive.google.com/file/d/1NDCBzt-h-ClN9vPTnMICYr87FJE9XF9m/view" target="_blank" className="button-centered"> <button className="button-light"><span className="button-resume">Resume</span></button> </a>
-            <a href="#contact-section" className="button-centered"><button className="button-light"> <span className="button-contact">Contact</span></button> </a> */}
         </nav>
     );
 }
