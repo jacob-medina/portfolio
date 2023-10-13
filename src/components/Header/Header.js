@@ -1,15 +1,68 @@
 import "./Header.css";
 
-import Navigation from "./Navigation/Navigation";
+import Navigation from "../Navigation/Navigation";
+import { mern } from "../../images";
+import { useEffect, useState } from "react";
 
 export default function Header() {
+    const [mernSubject, setMernSubject] = useState("MERN");
+    const [hasInteracted, setHasInteracted] = useState(false);
+
+    const changeMernSubject = (event) => {
+        setMernSubject(event.target.getAttribute('alt'));
+        setHasInteracted(true);
+        // event.target.classList.add('mern-icon-hover');
+    }
+    
+    const leaveMernSubject = (event) => {
+        event.target.classList.remove('mern-icon-hover');
+    }
+    
+    const icons = ['MongoDB', 'Express', 'React', 'Node'];
+    let i = 0;
+    // const interval = setInterval(() => {
+    //     console.log(hasInteracted)
+    //         if (hasInteracted) {
+    //             clearInterval(interval);
+    //             return;
+    //         };
+    //         setMernSubject(icons[i]);
+    //         i++;
+    //         if (i >= icons.length) i = 0;
+    //     }, 1000)
+
+    useEffect(() => {
+        document.querySelectorAll('.mern-icon').forEach(icon => icon.classList.remove('mern-icon-hover'));
+        document.querySelector(`.mern-icon[alt=${mernSubject}]`)?.classList.add('mern-icon-hover');
+    }, [mernSubject])
+
     return (
         <header>
             <div id="hero-shot">
-                <h1>Jacob Medina</h1>
-                <p>Full Stack Web Developer</p>
-
-                <Navigation />
+                <div className="justify-center-then-start">
+                    <h1>Jacob Medina</h1>
+                </div>
+                    {/* <p className="subtitle-1">Full Stack Web Developer</p> */}
+                    {/* onMouseLeave={() => setMernSubject("MERN")} */}
+                    <div className="justify-center-then-start mern-icons-container">
+                        <img src={mern.mongoDb} alt="MongoDB" className="mern-icon" onMouseOver={changeMernSubject} onMouseLeave={leaveMernSubject}></img>
+                        <img src={mern.express} alt="Express" className="mern-icon" onMouseOver={changeMernSubject} onMouseLeave={leaveMernSubject}></img>
+                        <img src={mern.react} alt="React" className="mern-icon" onMouseOver={changeMernSubject} onMouseLeave={leaveMernSubject}></img>
+                        <img src={mern.node} alt="Node" className="mern-icon" onMouseOver={changeMernSubject} onMouseLeave={leaveMernSubject}></img>
+                    </div>
+                    <div className="justify-center-then-start">
+                        <span className="subtitle-1 code">&#8227; Full Stack Developer using <span className="code highlight" style={{
+                            // borderRadius: 'var(--border-radius)',
+                            // boxShadow: 'var(--shadow)',
+                            // backgroundColor: 'var(--white)',
+                            // paddingLeft: '5px',
+                            // paddingRight: '10px',
+                            // color: 'var(--black)',
+                            // textShadow: 'none',
+                        }}>{mernSubject}</span>.</span>
+                        {/* <span className="subtitle-1"></span> */}
+                    </div>
+                {/* <Navigation /> */}
             </div>
         </header>
     );

@@ -8,10 +8,10 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    padding: 7%;
     padding-top: 40px;
-    /* background-color: teal; */
-    background: linear-gradient(15deg, var(--dark-blue) 80%, var(--neon))
+    /* background-color: var(--black); */
+    /* background: linear-gradient(15deg, var(--dark-blue) 80%, var(--neon)); */
     /* background-image: url("../../assets/images/hero-shot-2.png");
     background-position: left bottom 75%; */
 }
@@ -20,15 +20,79 @@ header {
 #hero-shot h1 {
     margin: var(--heading-margin);
     text-align: center;
-    font-size: 400%;
+    font-size: 600%;
     font-weight: 700;
     text-shadow: 5px 5px 0px var(--black);
 }
 
 /* My title */
-#hero-shot h1 + p {
+.subtitle-1 {
     margin: 5px 0;
     text-align: center;
     font-size: 200%;
     text-shadow: 2px 2px 0px var(--black);
+}
+
+.subtitle-2 {
+    font-size: 150%;
+}
+
+.mern-icons-container {
+    --float-amount: 7px;
+    margin: calc(10px + var(--float-amount) * 2) 0;
+}
+
+.mern-icon {
+    height: 60px;
+    width: auto;
+    margin: 0 10px;
+
+    position: relative;
+    top: var(--float-amount);
+
+    animation: float 3s ease-in-out infinite;
+
+    filter: var(--white-filter);
+    transition: transform 0.3s;
+}
+
+.mern-icon:hover {
+    filter: var(--neon-filter);
+    transform: scale(1.2) skew(-0.06rad);
+    transition: transform 0.3s;
+}
+
+.mern-icon:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.mern-icon:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.mern-icon:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.mern-icon:nth-child(4) {
+    animation-delay: 0.75s;
+}
+
+@keyframes float {
+    0% {
+        top: var(--float-amount);
+    }
+    50% {
+        top: calc(-1 * var(--float-amount));
+    }
+    100% {
+        top: var(--float-amount);
+    }
+}
+
+@media screen and (min-width: 740px) {
+    #hero-shot h1,
+    .subtitle-1 {
+        text-align: start;
+    }
 }

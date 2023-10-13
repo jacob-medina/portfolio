@@ -38,12 +38,17 @@
 }
 
 .btn-light {
-    background-color: var(--neon);
+    /* background-color: var(--neon); */
     color: var(--dark-blue);
+
+    background-image: linear-gradient(to left, var(--dark-blue) 50%, var(--neon) 50%);
+    background-size: 200%;
+    background-position: 0% 0%;
 }
 
 .btn-light:hover {
-    background-color: var(--dark-blue);
+    /* background-color: var(--dark-blue); */
     color: var(--neon);
-    
+
+    background-position: -100% 0%;
 }

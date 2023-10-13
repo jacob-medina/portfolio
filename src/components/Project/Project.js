@@ -5,9 +5,9 @@ import { projectPreviews } from "../../images";
 
 import LinkButton from '../common/LinkButton/LinkButton';
 
-export default function Project({ projectName, description, deployLink, repoLink, previewImg, toolsUsed }) {
+export default function Project({ projectId, projectName, description, deployLink, repoLink, previewImg, toolsUsed }) {
     return (
-        <div className="project">
+        <div className="project" id={`project-${projectId}`}>
             <h3>{projectName}</h3>
             <div className="flex-column justify-center align-center">
                 {/* Image */}

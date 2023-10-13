@@ -1,12 +1,12 @@
 :root {
-    /* --dark-blue: #0EA293;
-    --white: #f4f4ef;
-    --black: #2F0F5D;
-    --neon: #27E1C1; */
     --dark-blue: #086E7D;
     --white: #f4f4f4;
-    --black: #282846;
-    --neon: #FFC900;
+    --white-filter: invert(99%) sepia(23%) saturate(66%) hue-rotate(260deg) brightness(112%) contrast(91%);
+    /* --black: #282846; */
+    --black: #131313;
+    --yellow: #FFC900;
+    --neon: #00dcbf;
+    --neon-filter: invert(78%) sepia(73%) saturate(1960%) hue-rotate(358deg) brightness(102%) contrast(105%);
     --shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
     --shadow-hover: 0px 3px 7px rgba(0, 0, 0, 0.6);
     --heading-margin: 10px 0;
@@ -16,6 +16,7 @@
     --big-border-width: 5px;
     --hover-transition-duration: 0.2s;
     --border-radius: 5px;
+    --top-border-thickness: 20px;
 }
 
 html {
@@ -30,6 +31,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Space Grotesk', sans-serif;
     padding: var(--heading-margin);
+}
+
+.code {
+    font-family: 'Space Mono', monospace;
 }
 
 button {
@@ -70,13 +75,40 @@ strong {
     font-weight: 600;
 }
 
-ul {
+section ul {
     list-style-type: disc;
     margin-left: 20px;
 }
 
 li {
     margin: 10px 0;
+}
+
+.highlight,
+.highlight-dark {
+    position: relative;
+    isolation: isolate;
+    /* font-style: italic; */
+    /* font-family: 'Space Grotesk', sans-serif; */
+}
+
+.highlight::before,
+.highlight-dark::before {
+    content: "";
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    bottom: 5px;
+    z-index: -1;
+    transform: skew(-0.312rad);
+}
+
+.highlight::before {
+    background-color: var(--yellow);
+}
+
+.highlight-dark::before {
+    background-color: var(--dark-blue);
 }
 
 /* .material-symbols-rounded {

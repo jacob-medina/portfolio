@@ -18,7 +18,8 @@
     flex-direction: column;
 }
 
-.justify-center-then-start {
+.justify-center-then-start,
+.justify-center-then-end {
     display: flex;
     justify-content: center;
 }
@@ -54,6 +55,10 @@
 
     .justify-center-then-start {
         justify-content: flex-start;
+    }
+
+    .justify-center-then-end {
+        justify-content: flex-end;
     }
 }
 

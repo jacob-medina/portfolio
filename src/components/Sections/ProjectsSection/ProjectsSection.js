@@ -57,6 +57,7 @@ export default function ProjectsSection() {
             {projects.map(p =>
                 <Project 
                     key={p.id}
+                    projectId={p.id}
                     projectName={p.projectName}
                     description={p.description}
                     previewImg={p.previewImg}
