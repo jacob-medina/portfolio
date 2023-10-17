@@ -1,4 +1,6 @@
 import "../Section.css";
+import "./ProjectsSection.css";
+
 import Project from "../../Project/Project";
 
 const projects = [
@@ -51,7 +53,7 @@ const projects = [
 
 export default function ProjectsSection() {
     return (
-        <section id="project-section" className="section-light">
+        <section id="project-section" className="section-light white-dot-background">
             <h2>My Projects.</h2>
 
             {projects.map(p =>

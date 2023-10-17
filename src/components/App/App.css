@@ -10,12 +10,13 @@
     --shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
     --shadow-hover: 0px 3px 7px rgba(0, 0, 0, 0.6);
     --heading-margin: 10px 0;
-    --button-icon-font-family: 'Material Symbols Rounded';
+    --button-icon-font-family: 'Material Symbols Sharp';
     --button-icon-font-size: 120%;
     --button-icon-margin: auto 10px;
     --big-border-width: 5px;
     --hover-transition-duration: 0.2s;
-    --border-radius: 5px;
+    /* --border-radius: 5px; */
+    --border-radius: 0px;
     --top-border-thickness: 20px;
 }
 
@@ -29,7 +30,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Space Grotesk', sans-serif;
+    /* font-family: 'Space Grotesk', sans-serif; */
+    font-family: 'Space Mono', monospace;
     padding: var(--heading-margin);
 }
 
@@ -42,11 +44,12 @@ button {
     height: 50px;
     margin: 10px;
     border-style: solid;
-    border-radius: var(--border-radius);
+    /* border-radius: var(--border-radius); */
     border-width: 0;/*3px;*/
     border-color: var(--dark-blue);
-    box-shadow: var(--shadow);
+    /* box-shadow: var(--shadow); */
     font-size: 100%;
+    font-family: "Space Mono", monospace;
     transition-duration: var(--hover-transition-duration);
 }
 
@@ -111,10 +114,10 @@ li {
     background-color: var(--dark-blue);
 }
 
-/* .material-symbols-rounded {
+.material-symbols-sharp {
   font-variation-settings:
   'FILL' 0,
-  'wght' 300,
+  'wght' 400,
   'GRAD' 0,
-  'opsz' 48
-} */
+  'opsz' 24
+}

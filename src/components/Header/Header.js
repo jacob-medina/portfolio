@@ -1,6 +1,5 @@
 import "./Header.css";
 
-import Navigation from "../Navigation/Navigation";
 import { mern } from "../../images";
 import { useEffect, useState } from "react";
 
@@ -51,18 +50,8 @@ export default function Header() {
                         <img src={mern.node} alt="Node" className="mern-icon" onMouseOver={changeMernSubject} onMouseLeave={leaveMernSubject}></img>
                     </div>
                     <div className="justify-center-then-start">
-                        <span className="subtitle-1 code">&#8227; Full Stack Developer using <span className="code highlight" style={{
-                            // borderRadius: 'var(--border-radius)',
-                            // boxShadow: 'var(--shadow)',
-                            // backgroundColor: 'var(--white)',
-                            // paddingLeft: '5px',
-                            // paddingRight: '10px',
-                            // color: 'var(--black)',
-                            // textShadow: 'none',
-                        }}>{mernSubject}</span>.</span>
-                        {/* <span className="subtitle-1"></span> */}
+                        <span className="subtitle-1 code">Full Stack Developer using <span className="code highlight">{mernSubject}</span>.</span>
                     </div>
-                {/* <Navigation /> */}
             </div>
         </header>
     );

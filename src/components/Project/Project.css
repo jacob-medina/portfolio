@@ -6,6 +6,7 @@
     max-width: 872px;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
+    background-color: white;
 }
 
 .project h3 {
@@ -19,7 +20,7 @@
     max-width: 330px;
     position: relative;
     border: var(--big-border-width) solid var(--dark-blue);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     /* transition: var(--hover-transition-duration); */
 }
 
