@@ -27,14 +27,19 @@
 }
 
 .btn-dark {
-    background-color: var(--dark-blue);
     color: var(--neon);
+    border: 2px solid var(--neon);
+    /* background-color: transparent; */
+    
+    background-image: linear-gradient(to left, var(--neon) 50%, white 50%);
+    background-size: 200%;
+    background-position: 0% 0%;
 }
 
 .btn-dark:hover {
-    background-color: var(--neon);
     color: var(--dark-blue);
-    box-shadow: var(--shadow-hover);
+    /* background-color: var(--neon); */
+    background-position: -100% 0%;
 }
 
 .btn-light {

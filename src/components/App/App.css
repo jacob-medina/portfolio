@@ -6,7 +6,9 @@
     --black: #131313;
     --yellow: #FFC900;
     --neon: #00dcbf;
+    --neon-transparent: rgb(0, 220, 191, 0.5);
     --neon-filter: invert(78%) sepia(73%) saturate(1960%) hue-rotate(358deg) brightness(102%) contrast(105%);
+    
     --shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
     --shadow-hover: 0px 3px 7px rgba(0, 0, 0, 0.6);
     --heading-margin: 10px 0;
@@ -18,6 +20,9 @@
     /* --border-radius: 5px; */
     --border-radius: 0px;
     --top-border-thickness: 20px;
+
+    --font-monospace: 'Space Mono', monospace;
+    --font-serif: 'Poppins', sans-serif;
 }
 
 html {
@@ -25,18 +30,18 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-serif);
     transition-duration: var(--hover-transition-duration);
 }
 
 h1, h2, h3, h4, h5, h6 {
     /* font-family: 'Space Grotesk', sans-serif; */
-    font-family: 'Space Mono', monospace;
+    font-family: var(--font-monospace);
     padding: var(--heading-margin);
 }
 
 .code {
-    font-family: 'Space Mono', monospace;
+    font-family: var(--font-monospace);
 }
 
 button {
@@ -49,7 +54,7 @@ button {
     border-color: var(--dark-blue);
     /* box-shadow: var(--shadow); */
     font-size: 100%;
-    font-family: "Space Mono", monospace;
+    font-family: var(--font-monospace);
     transition-duration: var(--hover-transition-duration);
 }
 
@@ -60,14 +65,14 @@ button:hover {
 h2 {
     font-size: 300%;
     font-weight: 400;
-    font-style: italic;
+    /* font-style: italic; */
     text-align: center;
     
 }
 
 h3 {
     font-size: 200%;
-    font-style: oblique;
+    /* font-style: oblique; */
 }
 
 p {
