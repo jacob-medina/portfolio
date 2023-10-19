@@ -17,27 +17,27 @@
     object-position: top 100% left 100%;
 }
 
-#about-section .section-light {
+#about .section-light {
     max-width: 800px;
     margin: 0 auto;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
 }
 
-#about-section > .section-light {
+#about > .section-light {
     margin-top: 100px;
 }
 
-#about-section .section-light .container {
+#about .section-light .container {
     padding: 40px;
 }
 
-#about-section h2 {
+#about h2 {
     font-style: normal;
     text-align: left;
 }
 
-#about-section button {
+#about button {
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
@@ -83,11 +83,11 @@
         flex-direction: row;
     }
 
-    #about-section {
+    #about {
         flex-direction: row;
     }
 
-    #about-section br {
+    #about br {
         display: none;
     }
 }

@@ -26,7 +26,8 @@ export default function Header() {
                     
                 </div>
                 <div className="justify-center-then-start">
-                    <span className="subtitle-1 code">Full Stack Developer using <span className="code highlight">{mernSubject}</span>.</span>
+                    {/* <span className="code highlight">{mernSubject}</span> */}
+                    <span className="subtitle-1 code">Full Stack Developer using {mernSubject}.</span>
                 </div>
             </div>
         </header>

@@ -49,11 +49,11 @@
 }
 
 @media screen and (min-width: 740px) {
-    .flex-column:not(#about-section) {
+    .flex-column:not(#about) {
         flex-direction: row;
     }
 
-    #about-section .flex-column {
+    #about .flex-column {
         flex-direction: row;
     }
 

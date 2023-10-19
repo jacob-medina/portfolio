@@ -8,7 +8,7 @@ import Skill from "./Skill/Skill";
 
 export default function AboutSection() {
     return (
-        <section id="about-section">
+        <section id="about">
             <div className="about-flex-column align-center">
                 <div id="jacob-photo-wrapper">
                     <img id="jacob-photo" src={jacobPhoto} alt="Jacob Medina" />
@@ -18,7 +18,8 @@ export default function AboutSection() {
                         <h2>Hi!</h2>
                         <div className="flex-column">
                             <div id="jacob-description-container">
-                            <h3>I like <span className="highlight">problems</span>.</h3>
+                                {/* <span className="highlight">problems</span> */}
+                            <h3>I like problems.</h3>
                             <p>
                                 I solve them every day with <strong>clean, organized code</strong>. I've got a knack for detail, consistency, and getting the job done.
                             </p>

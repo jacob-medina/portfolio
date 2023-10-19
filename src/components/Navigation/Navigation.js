@@ -7,13 +7,13 @@ export default function Nav({ visibleSections: { project: projectVisible=false, 
         <nav className={`nav-container ${projectVisible && "nav-container-border"}`}>
             <ul className="nav-items justify-center-then-end">
                 <li className="nav-item">
-                    <a className={`code ${onlyProjectVisible && "nav-item-hover"}`} href="#project-section">
+                    <a className={`code ${onlyProjectVisible && "nav-item-hover"}`} href="#project">
                         {onlyProjectVisible && <span>⋅</span>}
                         Projects
                     </a>
                 </li>
                 <li className="nav-item">
-                    <a className={`code ${contactVisible && "nav-item-hover"}`} href="#contact-section">
+                    <a className={`code ${contactVisible && "nav-item-hover"}`} href="#contact">
                         {contactVisible && <span>⋅</span>}
                         Contact
                     </a>

@@ -5,7 +5,7 @@ import ContactForm from "../ContactForm/ContactForm";
 
 export default function Footer() {
     return (
-        <footer id="contact-section" className="section-neon">
+        <footer id="contact" className="section-neon">
             <h2>Contact Me</h2>
             <div id="contact-links" className="flex-column align-center justify-center">
                 <a href="mailto:jacobmedina1618@gmail.com" className="contact-link"><span>Email</span></a>

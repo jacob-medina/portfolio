@@ -53,8 +53,8 @@ const projects = [
 
 export default function ProjectsSection() {
     return (
-        <section id="project-section" className="section-light white-dot-background">
-            <h2 className="project-section-heading">My Projects</h2>
+        <section id="project" className="section-light white-dot-background">
+            <h2 className="project-heading">My Projects</h2>
 
             {projects.map(p =>
                 <Project 

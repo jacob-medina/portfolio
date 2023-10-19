@@ -19,14 +19,14 @@ function App() {
       else setScrollProjectSection(false);
     });
     
-    projectObserver.observe(document.querySelector('#project-section'));
+    projectObserver.observe(document.querySelector('#project'));
     
     const contactObserver = new IntersectionObserver((entries) => {
       if (entries.some(entry => entry.isIntersecting)) setContactProjectSection(true);
       else setContactProjectSection(false);
     });
     
-    contactObserver.observe(document.querySelector('#contact-section'));
+    contactObserver.observe(document.querySelector('#contact'));
   }, []);
 
 

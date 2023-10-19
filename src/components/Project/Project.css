@@ -40,7 +40,7 @@
 }
 
 @media screen and (min-width: 740px) {
-    #project-section .project-img-link img {
+    #project .project-img-link img {
         width: 30vw;
     }
 
