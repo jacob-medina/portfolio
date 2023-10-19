@@ -22,7 +22,7 @@ header {
     text-align: center;
     font-size: 600%;
     font-weight: 700;
-    text-shadow: 5px 5px 0px var(--black);
+    /* text-shadow: 5px 5px 0px var(--black); */
 }
 
 /* My title */
@@ -52,29 +52,29 @@ header {
 
     animation: float 3s ease-in-out infinite;
 
-    filter: var(--white-filter);
+    color: white;
     transition: transform 0.3s;
 }
 
 .mern-icon:hover {
-    filter: var(--neon-filter);
+    color: var(--neon);
     transform: scale(1.2) skew(-0.06rad);
     transition: transform 0.3s;
 }
 
-.mern-icon:nth-child(1) {
+.mern-icon[logo=MonogDB] {
     animation-delay: 0s;
 }
 
-.mern-icon:nth-child(2) {
+.mern-icon[logo=Express] {
     animation-delay: 0.25s;
 }
 
-.mern-icon:nth-child(3) {
+.mern-icon[logo=React] {
     animation-delay: 0.5s;
 }
 
-.mern-icon:nth-child(4) {
+.mern-icon[logo=Node] {
     animation-delay: 0.75s;
 }
 

@@ -1,39 +1,17 @@
 import "./Header.css";
 
-import { mern } from "../../images";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+
+import ToolLogo from "../Project/ToolLogo/ToolLogo";
 
 export default function Header() {
     const [mernSubject, setMernSubject] = useState("MERN");
-    const [hasInteracted, setHasInteracted] = useState(false);
 
     const changeMernSubject = (event) => {
-        setMernSubject(event.target.getAttribute('alt'));
-        setHasInteracted(true);
-        // event.target.classList.add('mern-icon-hover');
+        const target = event.target.matches('svg') ? event.target : event.target.parentNode;
+        const subject = target.getAttribute('logo') ?? "MERN";
+        setMernSubject(subject);
     }
-    
-    const leaveMernSubject = (event) => {
-        event.target.classList.remove('mern-icon-hover');
-    }
-    
-    const icons = ['MongoDB', 'Express', 'React', 'Node'];
-    let i = 0;
-    // const interval = setInterval(() => {
-    //     console.log(hasInteracted)
-    //         if (hasInteracted) {
-    //             clearInterval(interval);
-    //             return;
-    //         };
-    //         setMernSubject(icons[i]);
-    //         i++;
-    //         if (i >= icons.length) i = 0;
-    //     }, 1000)
-
-    useEffect(() => {
-        document.querySelectorAll('.mern-icon').forEach(icon => icon.classList.remove('mern-icon-hover'));
-        document.querySelector(`.mern-icon[alt=${mernSubject}]`)?.classList.add('mern-icon-hover');
-    }, [mernSubject])
 
     return (
         <header>
@@ -41,17 +19,15 @@ export default function Header() {
                 <div className="justify-center-then-start">
                     <h1>Jacob Medina</h1>
                 </div>
-                    {/* <p className="subtitle-1">Full Stack Web Developer</p> */}
-                    {/* onMouseLeave={() => setMernSubject("MERN")} */}
-                    <div className="justify-center-then-start mern-icons-container">
-                        <img src={mern.mongoDb} alt="MongoDB" className="mern-icon" onMouseOver={changeMernSubject} onMouseLeave={leaveMernSubject}></img>
-                        <img src={mern.express} alt="Express" className="mern-icon" onMouseOver={changeMernSubject} onMouseLeave={leaveMernSubject}></img>
-                        <img src={mern.react} alt="React" className="mern-icon" onMouseOver={changeMernSubject} onMouseLeave={leaveMernSubject}></img>
-                        <img src={mern.node} alt="Node" className="mern-icon" onMouseOver={changeMernSubject} onMouseLeave={leaveMernSubject}></img>
-                    </div>
-                    <div className="justify-center-then-start">
-                        <span className="subtitle-1 code">Full Stack Developer using <span className="code highlight">{mernSubject}</span>.</span>
-                    </div>
+                <div className="justify-center-then-start mern-icons-container">
+                    {['MongoDB', 'Express', 'React', 'Node'].map((tool, key) => (
+                        <ToolLogo key={key} logo={tool} className="mern-icon" onMouseEnter={changeMernSubject}  />
+                    ))}
+                    
+                </div>
+                <div className="justify-center-then-start">
+                    <span className="subtitle-1 code">Full Stack Developer using <span className="code highlight">{mernSubject}</span>.</span>
+                </div>
             </div>
         </header>
     );

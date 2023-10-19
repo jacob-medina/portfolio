@@ -1,21 +1,8 @@
-import bootstrap from './bootstrap.svg';
-import css from './css.svg';
-import express from './express.svg';
-import handlebars from './handlebars.svg';
-import html from './html.svg';
-import javascript from './javascript.svg';
-import jQuery from './jquery.svg';
-import materialize from './materialize-css.png';
-import sequelize from './sequelize.png';
-import socketIO from './socket-io.svg';
-import mongoDb from './mongodb.svg';
-import react from "./react.svg";
-import node from './node.svg';
-import python from './python.svg';
-import mysql from './mysql.svg';
+// import { logos } from '../../../images';
+import './ToolLogo.css';
 
-const logos = (name, props) => {
-    switch(name) {
+export default function ToolLogo(props) {
+    switch(props.logo) {
         case 'Bootstrap': return (
             <>
                 {<svg {...props} height="1992" viewBox="0 0 512 407.864" width="2500" xmlns="http://www.w3.org/2000/svg">
@@ -78,7 +65,10 @@ const logos = (name, props) => {
                 </svg>
             }</>
         )
-        case 'Materialize': return materialize
+        case 'Materialize': return (
+            <>
+            </>
+        )
 
         case 'MongoDB': return (
             <>
@@ -164,6 +154,4 @@ const logos = (name, props) => {
         default: 
             return (<></>);
     }
-};
-
-export default logos;
+}

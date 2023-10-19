@@ -11,7 +11,7 @@ const projects = [
         previewImg: "rateit",
         deployLink: "https://rateit-e0014fad4ba9.herokuapp.com",
         repoLink: "https://github.com/JimmyJr77/rateit",
-        toolsUsed: ['Handlebars', 'Sequelize', 'Express', 'Node', 'Bootsrap', 'JavaScript', 'CSS'],
+        toolsUsed: ['Handlebars', 'Sequelize', 'Express', 'Node', 'Bootstrap', 'JavaScript', 'CSS'],
     },
     {
         id: 2,
@@ -20,7 +20,7 @@ const projects = [
         previewImg: "totkBingo",
         deployLink: "https://totkbingo-728f1f6f6e8d.herokuapp.com",
         repoLink: "https://github.com/jacob-medina/totk-bingo",
-        toolsUsed: ['Socket.io', 'Express', 'Node', 'jQuery', 'Bootsrap', 'JavaScript', 'HTML', 'CSS'],
+        toolsUsed: ['Socket.io', 'Express', 'Node', 'jQuery', 'Bootstrap', 'JavaScript', 'HTML', 'CSS'],
     },
     {
         id: 3,
@@ -29,7 +29,7 @@ const projects = [
         previewImg: "stackology",
         deployLink: "https://stackology-ac660c15f415.herokuapp.com",
         repoLink: "https://github.com/jacob-medina/stackology",
-        toolsUsed: ['Handlebars', 'Sequelize', 'Express', 'Node', 'Bootsrap', 'JavaScript'],
+        toolsUsed: ['Handlebars', 'Sequelize', 'Express', 'Node', 'Bootstrap', 'JavaScript'],
     },
     {
         id: 4,

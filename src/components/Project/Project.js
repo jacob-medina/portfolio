@@ -1,6 +1,5 @@
 import "./Project.css";
 
-import ToolLogos from "./ToolLogos/ToolLogos";
 import Tag from "../common/Tag/Tag";
 
 import { projectPreviews } from "../../images";

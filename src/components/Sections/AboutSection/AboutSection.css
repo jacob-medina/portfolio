@@ -51,13 +51,13 @@
 }
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 740px) {
+/* @media screen and (min-width: 740px) {
     #skills-container {
         padding-left: min(13vw, 215px);
     }
-}
+} */
 
-@media screen and (min-width: 1275px) {
+@media screen and (min-width: 910px) {
     #about-section {
         flex-direction: row;
     }
