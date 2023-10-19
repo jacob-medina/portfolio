@@ -9,7 +9,7 @@ import Skill from "./Skill/Skill";
 export default function AboutSection() {
     return (
         <section id="about-section">
-            <div className="flex-column align-center">
+            <div className="about-flex-column align-center">
                 <div id="jacob-photo-wrapper">
                     <img id="jacob-photo" src={jacobPhoto} alt="Jacob Medina" />
                 </div>
@@ -48,36 +48,26 @@ export default function AboutSection() {
 
             <div className="section-light">
                 <div className="container skills-container">
-                    <h3>Skills</h3>
-                    <div className="skills-languages">
+                    <h2>Skills</h2>
+                    <div className="skills-languages-container">
                         <h4>Languages</h4>
-
-                        <Skill skill="JavaScript" />
-                        <Skill skill="HTML" />
-                        <Skill skill="CSS" />
-                        <Skill skill="Python" />
-                        <Skill skill="MySQL" />
+                        <div className="skills-languages">
+                            <Skill skill="JavaScript" />
+                            <Skill skill="HTML" />
+                            <Skill skill="CSS" />
+                            <Skill skill="Python" />
+                            <Skill skill="SQL" />
+                        </div>
                     </div>
 
+                    <h4 className="skill-frameworks-heading">Frameworks</h4>
                     <div className="skills-frameworks">
-                        <h4>Frameworks</h4>
-                        <Skill skill="Bootstrap" />
                         <Skill skill="MongoDB" />
                         <Skill skill="Express" />
                         <Skill skill="React" />
-                        <Skill skill="Node" />
-                        <Skill skill="Git" />
+                        <Skill skill="Bootstrap" />
                         <Skill skill="jQuery" />
-                        <Skill skill="Sequelize" />
-                        <ul>
-                            <li>MongoDB</li>
-                            <li>Express</li>
-                            <li>React</li>
-                            <li>Node</li>
-                            <li>Git</li>
-                            <li>jQuery</li>
-                            <li>Sequelize</li>
-                        </ul>
+                        <Skill skill="Git" />
                     </div>
                 </div>
             </div>

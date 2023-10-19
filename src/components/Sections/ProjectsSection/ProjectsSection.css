@@ -3,9 +3,13 @@
     /* background-image: radial-gradient(var(--black), black 80%); */
     --dot-gap: 60px;
     
-    background: radial-gradient(black 1px, white 0);
+    background: radial-gradient(black 1px, var(--white) 0);
     background-size: var(--dot-gap) var(--dot-gap);
     /* background-attachment: fixed; */
     /* border: var(--top-border-thickness) solid var(--white); */
     /* border-top: none; */
+}
+
+.project-section-heading {
+    margin-bottom: 2rem;
 }

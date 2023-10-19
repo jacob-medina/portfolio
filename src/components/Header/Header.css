@@ -52,7 +52,7 @@ header {
 
     animation: float 3s ease-in-out infinite;
 
-    color: white;
+    color: var(--white);
     transition: transform 0.3s;
 }
 

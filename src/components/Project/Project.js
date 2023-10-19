@@ -1,6 +1,7 @@
 import "./Project.css";
 
 import Tag from "../common/Tag/Tag";
+import ToolLogo from "./ToolLogo/ToolLogo";
 
 import { projectPreviews } from "../../images";
 
@@ -34,7 +35,10 @@ export default function Project({ projectId, projectName, description, deployLin
                     </div>
                     <div className="justify-center-then-start flex-wrap">
                         {toolsUsed.map((tool, i) => (
-                            <Tag key={i}>{tool}</Tag>
+                            <Tag key={i}>
+                                <ToolLogo logo={tool} className='project-tool-logo' />
+                                <span>{tool}</span>
+                            </Tag>
                         ))}
                         {/* <ToolLogos tools={toolsUsed} /> */}
                     </div>

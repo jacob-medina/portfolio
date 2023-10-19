@@ -1,11 +1,15 @@
 import './Skill.css';
-import { logos } from '../../../../images';
+import ToolLogo from '../../../Project/ToolLogo/ToolLogo';
+import Tag from "../../../common/Tag/Tag.js";
 
 export default function Skill({ skill }) {
     return (
         <div className='skill'>
-            {logos[skill]}
-            <p className='skill-text'>{skill}</p>
+            {/* <Tag> */}
+                <ToolLogo logo={skill} className='skill-logo' />
+                <p className='skill-text'>{skill}</p>
+
+            {/* </Tag> */}
         </div>
     )
 }
