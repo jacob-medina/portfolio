@@ -27,7 +27,7 @@
 }
 
 .btn-dark {
-    color: var(--neon);
+    color: var(--dark-blue);
     border: 2px solid var(--neon);
     /* background-color: transparent; */
     
