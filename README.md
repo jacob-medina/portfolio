@@ -6,7 +6,7 @@
 
 This project is my professional portfolio, which outlines my web development projects and some information about myself.
 
-![Portfolio Website Preview](./readme-assets/jacob-medina-portfolio-preview.png)
+![Portfolio Website Preview](./readme-assets/portfolio-preview.png)
 
 The aim of my portfolio is to present my skills and works to potential employers. When viewing the website, employers will see a clean and responsive user interface. This adds more credibility and professionalism to my work.
 
@@ -17,8 +17,8 @@ My portfolio is fully interactive and responsive. Users may do the following:
 - Resize the window to get a layout that is appropriate for the screen dimensions
 
 - Navigation Menu
-  - Click on the **Projects** or **Contact** button to scroll to those respective sections
-  - Click on the **Resume** button to open a PDF of my resume
+  - Click on the **Projects** or **Contact** link to scroll to those respective sections
+  - Click on the **Resume** link to open a PDF of my resume
 
 
 - Projects
@@ -31,7 +31,7 @@ My portfolio is fully interactive and responsive. Users may do the following:
 
 ## Credits
 
-All images in the folder `/src/images/logos/` originate from [World Vector Logo](https://worldvectorlogo.com/).
+All images in the folder `/logos` originate from [World Vector Logo](https://worldvectorlogo.com/).
 
 The file `reset.css` was not created by me. It was downloaded from [meyerweb](https://meyerweb.com), which provides a public reset.css file. It comes with the following citation information:
 
