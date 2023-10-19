@@ -1,5 +1,5 @@
 .icon-btn {
-    --button-icon-font-family: 'Material Symbols Rounded';
+    --button-icon-font-family: 'Material Symbols Sharp';
     --button-icon-font-size: 120%;
     --button-icon-margin: auto 10px;
     display: flex;
@@ -27,23 +27,33 @@
 }
 
 .btn-dark {
-    background-color: var(--dark-blue);
-    color: var(--neon);
+    color: var(--dark-blue);
+    border: 2px solid var(--neon);
+    /* background-color: transparent; */
+    
+    background-image: linear-gradient(to left, var(--neon) 50%, var(--white) 50%);
+    background-size: 200%;
+    background-position: 0% 0%;
 }
 
 .btn-dark:hover {
-    background-color: var(--neon);
     color: var(--dark-blue);
-    box-shadow: var(--shadow-hover);
+    /* background-color: var(--neon); */
+    background-position: -100% 0%;
 }
 
 .btn-light {
-    background-color: var(--neon);
+    /* background-color: var(--neon); */
     color: var(--dark-blue);
+
+    background-image: linear-gradient(to left, var(--dark-blue) 50%, var(--neon) 50%);
+    background-size: 200%;
+    background-position: 0% 0%;
 }
 
 .btn-light:hover {
-    background-color: var(--dark-blue);
+    /* background-color: var(--dark-blue); */
     color: var(--neon);
-    
+
+    background-position: -100% 0%;
 }

@@ -1,0 +1,41 @@
+.skills-languages, .skills-frameworks {
+    display: grid;
+    --skills-languages-columns: 1;
+    grid-template-columns: repeat(var(--skills-languages-columns), 1fr)
+}
+
+.skill {
+    --skill-font-size: 1rem;
+
+    margin: 0.3rem 0;
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.skill-logo {
+    /* color: black; */
+    --logo-scale: 1.5;
+    height: calc(var(--logo-scale) * var(--skill-font-size));
+    width: calc(var(--logo-scale) * var(--skill-font-size));
+    margin-right: 1rem;
+    /* filter: var(--neon-filter); */
+}
+
+.skill-text {
+    font-size: var(--skill-font-size);
+}
+
+@media screen and (min-width: 700px) {
+    .skills-languages, .skills-frameworks {
+        --skills-languages-columns: 2;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .skills-languages, .skills-frameworks {
+        --skills-languages-columns: 3;
+    }
+}

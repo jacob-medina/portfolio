@@ -18,7 +18,8 @@
     flex-direction: column;
 }
 
-.justify-center-then-start {
+.justify-center-then-start,
+.justify-center-then-end {
     display: flex;
     justify-content: center;
 }
@@ -43,6 +44,10 @@
     align-items: center;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 @media screen and (min-width: 740px) {
     .flex-column:not(#about-section) {
         flex-direction: row;
@@ -54,6 +59,10 @@
 
     .justify-center-then-start {
         justify-content: flex-start;
+    }
+
+    .justify-center-then-end {
+        justify-content: flex-end;
     }
 }
 

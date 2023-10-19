@@ -6,6 +6,7 @@
     max-width: 872px;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
+    background-color: var(--white);
 }
 
 .project h3 {
@@ -19,7 +20,7 @@
     max-width: 330px;
     position: relative;
     border: var(--big-border-width) solid var(--dark-blue);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     /* transition: var(--hover-transition-duration); */
 }
 
@@ -30,6 +31,12 @@
 
 .project-description p {
     text-align: center;
+}
+
+.project-tool-logo {
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-right: 0.25rem;
 }
 
 @media screen and (min-width: 740px) {

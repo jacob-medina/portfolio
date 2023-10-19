@@ -1,13 +1,15 @@
 import "./Project.css";
 
-import ToolLogos from "./ToolLogos/ToolLogos";
+import Tag from "../common/Tag/Tag";
+import ToolLogo from "./ToolLogo/ToolLogo";
+
 import { projectPreviews } from "../../images";
 
 import LinkButton from '../common/LinkButton/LinkButton';
 
-export default function Project({ projectName, description, deployLink, repoLink, previewImg, toolsUsed }) {
+export default function Project({ projectId, projectName, description, deployLink, repoLink, previewImg, toolsUsed }) {
     return (
-        <div className="project">
+        <div className="project" id={`project-${projectId}`}>
             <h3>{projectName}</h3>
             <div className="flex-column justify-center align-center">
                 {/* Image */}
@@ -31,8 +33,14 @@ export default function Project({ projectName, description, deployLink, repoLink
                     <div className="justify-center-then-start flex-column align-center">
                         <h4>What I Used</h4>
                     </div>
-                    <div className="justify-center-then-start">
-                        <ToolLogos tools={toolsUsed} />
+                    <div className="justify-center-then-start flex-wrap">
+                        {toolsUsed.map((tool, i) => (
+                            <Tag key={i}>
+                                <ToolLogo logo={tool} className='project-tool-logo' />
+                                <span>{tool}</span>
+                            </Tag>
+                        ))}
+                        {/* <ToolLogos tools={toolsUsed} /> */}
                     </div>
                 </div>
             </div>
