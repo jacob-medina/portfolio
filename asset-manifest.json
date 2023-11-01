@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.b6119e02.css",
-    "main.js": "/portfolio/static/js/main.579d8fff.js",
+    "main.js": "/portfolio/static/js/main.5cb7217c.js",
     "static/media/jacob.jpeg": "/portfolio/static/media/jacob.9e8f16194d33cce591f2.jpeg",
     "static/media/totk-bingo-preview.png": "/portfolio/static/media/totk-bingo-preview.d657119ac55d68036bee.png",
+    "static/media/ufree-preview.png": "/portfolio/static/media/ufree-preview.bf552da6d1d10739006a.png",
     "static/media/stackology-preview.png": "/portfolio/static/media/stackology-preview.82437c5362a6246e10bf.png",
     "static/media/rateit-preview.png": "/portfolio/static/media/rateit-preview.ebe2b811823f0483dc33.png",
     "static/media/odd-quote-out-preview.png": "/portfolio/static/media/odd-quote-out-preview.d3d33f9731c1fad765ce.png",
     "static/media/pixel-bee-preview.png": "/portfolio/static/media/pixel-bee-preview.4aec7133c8869cf1e509.png",
     "index.html": "/portfolio/index.html",
     "main.b6119e02.css.map": "/portfolio/static/css/main.b6119e02.css.map",
-    "main.579d8fff.js.map": "/portfolio/static/js/main.579d8fff.js.map"
+    "main.5cb7217c.js.map": "/portfolio/static/js/main.5cb7217c.js.map"
   },
   "entrypoints": [
     "static/css/main.b6119e02.css",
-    "static/js/main.579d8fff.js"
+    "static/js/main.5cb7217c.js"
   ]
 }
