@@ -21,7 +21,8 @@
 }
 
 .nav-item {
-    --nav-item-spacing: 30px;
+    --nav-item-spacing: 15px;
+    font-size: smaller;
     margin: 0 var(--nav-item-spacing);
 }
 
@@ -38,6 +39,13 @@
 .nav-item-hover {
     color: var(--neon) !important;
     transition: color 0.1s;
+}
+
+@media screen and (min-width: 385px) {
+    .nav-item {
+        --nav-item-spacing: 30px;
+        font-size: medium;
+    }
 }
 
 @media screen and (min-width: 740px) {

@@ -10,11 +10,11 @@
 }
 
 #jacob-photo {
-    width: 200%;
+    width: 100%;
     position: relative;
-    right: 50%;
+    /* right: 50%; */
     margin: 0 auto;
-    object-position: top 100% left 100%;
+    /* object-position: top 100% left 100%; */
 }
 
 #about .section-light {
@@ -75,6 +75,7 @@
     #jacob-photo-wrapper {
         width: 33%;
         max-width: 400px;
+        height: auto;
         max-height: 575px;
         margin: auto;
     }

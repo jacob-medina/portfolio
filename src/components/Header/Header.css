@@ -18,9 +18,10 @@ header {
 
 /* My name */
 #hero-shot h1 {
+    max-width: 455px;
     margin: var(--heading-margin);
     text-align: center;
-    font-size: 600%;
+    font-size: 400%;
     font-weight: 700;
     /* text-shadow: 5px 5px 0px var(--black); */
 }
@@ -91,6 +92,11 @@ header {
 }
 
 @media screen and (min-width: 740px) {
+    #hero-shot h1 {
+        font-size: 600%;
+        max-width: none;
+    }
+
     #hero-shot h1,
     .subtitle-1 {
         text-align: start;
